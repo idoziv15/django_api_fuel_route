@@ -1,18 +1,37 @@
-# Node modules
-node_modules/
+# Python-specific ignores
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+*.env
 
-# Environment variables
+# Django-specific ignores
+db.sqlite3
+media/
+*.log
+
+# Virtual Environment
+venv/
 .env
 
-# Logs
-logs
+# IDE and Editor-specific ignores
+.vscode/
+.idea/
+*.swp
+
+# Docker
+*.pid
+*.tar
 *.log
-npm-debug.log*
+.dockerignore
 
-# Operating system files
-.DS_Store
-Thumbs.db
+# Node modules (if applicable in the future)
+node_modules/
 
-# Other files to ignore
+# Build files
 dist/
 build/
+
+# System files
+.DS_Store
+Thumbs.db
